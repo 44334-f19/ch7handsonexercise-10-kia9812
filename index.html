@@ -11,7 +11,8 @@ body { margin:0;
 #container { background-color: #EEEEEE;
              color: #006600;
              min-width: 960px;
-             font-family: Verdana, Arial, sans-serif; }
+             font-family: Verdana, Arial, sans-serif; 
+            }
 header { background-color: #636631;
          background-image: url(showybg.jpg);
          background-position: bottom;
@@ -21,20 +22,28 @@ header { background-color: #636631;
          text-align: right;
          padding: 0 20px;
          border-bottom: 2px solid #000000; }		 
-nav { float: left;
-      width: 150px; }
-aside { float: right;
-        width: 200px; }
-main { margin: 0 210px 0 160px;
+nav { ;
+      width: 150px; 
+        float: 1;
+        order: 1;}
+ 
+aside { float: 1;
+        order: 4;
+        text-align: center;}
+main { text-align:center;
         padding: 1px 10px 20px 10px;
         background-color: #FFFFFF;
-        color: #006600; }
+        color: #006600; 
+        float: 8;
+        order: 2;}
 footer { font-size: .70em;
          text-align: center;
          color: #006600;
          background-color: #FFFFFF;
          padding-top: 10px;
-         clear: both; }		 
+         clear: both; }	
+#demo {display: flex;
+        flex-direction: row;}
 h1 { margin-top: 0;
      font-size: 3em;
      text-align: left;
@@ -54,8 +63,7 @@ nav img { margin: 30px;}
 main p { margin: 20px; }
 main h2, main h3 { color: #CC66CC;
                    background-color: #FFFFFF; }
-.floatright { margin: 10px;
-              float: right; }
+#img
 aside h3 { padding-bottom: 2px;
            border-bottom: 1px solid #000000;
            margin: 10px;
@@ -71,6 +79,7 @@ aside h3 { padding-bottom: 2px;
     <span><a href="#content">Skip to Content</a></span>
     <h1>Door County Wildflowers</h1>
   </header>
+<div id="demo">
   <nav>
   <ul>
     <li><a href="index.html">Home</a></li>
@@ -93,7 +102,7 @@ Newport Wilderness Society</a> sponsors free meadow hikes at 9am every Saturday.
     <h2>Door County</h2>
     <p>Wisconsin&#39;s Door County Peninsula is ecologically diverse &mdash; upland and boreal forest, bogs, swamps, sand and rock beaches, limestone escarpments, and farmlands.</p>
     <p>The variety of ecosystems supports a large number of wildflower species.</p>
-    <img src="trillium.jpg" width="200" height="150" alt="Trillium" id="floatright">
+    <img src="trillium.jpg" width="200" height="150" alt="Trillium" id="img">
     <h3>Explore the beauty <br>of Door County Wildflowers. . . .</h3>
     <p>With five state parks, tons of county parks, and private nature sanctuaries, Door County is teeming with natural areas for you to stalk your favorite wildflowers.</p>
     <footer> Copyright &copy; 2018 Door County Wild Flowers<br>
